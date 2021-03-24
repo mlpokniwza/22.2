@@ -10,10 +10,14 @@ export class ToDoListComponent {
     @Input()
     title: string;
     array = ['readManga'];
+
     addArray() {
         this.array.push(this.title);
     }
-    constructor() {}
 
+    constructor() {}
+    removeArray(i) {
+        this.array.splice(i, 1)
+    }
        
 }
