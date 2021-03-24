@@ -7,6 +7,7 @@ import { CategoryMenuComponent } from './home/categorymenu/categorymenu.componen
 import { NewbarComponent } from './home/newbar/newbar.component';
 import { TopBannerComponent } from './home/topbanner/topbanner.component';
 import { SearchBarComponent } from './home/newbar/searchbar/searchbar.component';
+import { ToDoListComponent } from './todolist/todolist.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     CategoryMenuComponent,
     NewbarComponent,
     TopBannerComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    ToDoListComponent
   ],
   imports: [
     BrowserModule,
