@@ -1,0 +1,8 @@
+<div>
+    <h3>My tasks today</h3>
+    <ul>
+        <li *ngFor="let element of array">{{element}}</li>
+    </ul>
+    Task: <input [(ngModel)]="title" /><button (click)="addArray()">Add</button>
+</div>
+        
