@@ -2,17 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component'
+import { CategoryMenuComponent } from './home/categorymenu/categorymenu.component';
+import { NewbarComponent } from './home/newbar/newbar.component';
+import { TopBannerComponent } from './home/topbanner/topbanner.component';
+import { SearchBarComponent } from './home/newbar/searchbar/searchbar.component';
 import { FormsModule } from '@angular/forms';
-import { CountingComponent } from './counting/counting.component';
-import { lab4component } from './home/Lab4Component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CountingComponent,
-    lab4component
+    CategoryMenuComponent,
+    NewbarComponent,
+    TopBannerComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
