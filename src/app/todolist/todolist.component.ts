@@ -7,12 +7,24 @@ import { Component, Input } from '@angular/core';
 })
 
 export class ToDoListComponent {
-    @Input()
-    title: string;
-    array = ['readManga'];
+    @Input('name') name: string;
+    @Input('description') description: string;
+    
+    id = 1;
+    array = [ 
+        {
+            id:1,
+            name: "kay",
+            description: "fuck you"
+        }
+    ];
 
     addArray() {
-        this.array.push(this.title);
+        this.array.push({
+            id: this.id,
+            name: this.name,
+            description: this.description
+        });
     }
 
     constructor() {}

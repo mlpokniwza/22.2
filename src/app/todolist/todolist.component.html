@@ -1,11 +1,21 @@
-<div>
+<div class="boxl">
     <h3>My tasks today</h3>
-    <ul>
-        <li *ngFor="let element of array; let i = index">
-            {{element}}
+    <ul style="list-style-type:none;">
+        <li  *ngFor="let element of array; let i = index">
+            {{element.id}} {{element.name}} {{element.description}}
             <button (click)="removeArray(i)">Delete</button>
         </li>
     </ul>
-    Task: <input [(ngModel)]="title" /><button (click)="addArray()">Add</button>
+    <div class="box">
+        <h3>Add task</h3>
+        <p>
+            <span> Name: <input [(ngModel)]="name"></span>
+        </p>
+        <p>
+            <span> Description: <input [(ngModel)]="description"></span>
+        </p>
+        <p>
+        <button (click)="addArray()">Add</button>
+    </p>
+    </div>
 </div>
-        
