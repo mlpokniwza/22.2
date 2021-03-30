@@ -15,7 +15,7 @@ export class ToDoListComponent {
         {
             id:1,
             name: "kay",
-            description: "fuck you"
+            description: "description"
         }
     ];
 

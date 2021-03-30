@@ -2,9 +2,17 @@
     <h3>My tasks today</h3>
     <ul style="list-style-type:none;">
         <li  *ngFor="let element of array; let i = index">
-            {{element.id}} {{element.name}} {{element.description}}
+        <button (click) = "select(i, true)">
+            
+            {{element.name}}
             <button (click)="removeArray(i)">Delete</button>
+
+        </button>
+            <p>
+                {{element.description}}
+            </p>
         </li>
+
     </ul>
     <div class="box">
         <h3>Add task</h3>
